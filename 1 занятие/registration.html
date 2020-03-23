@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Регистрация</title>
+        <meta charset="UTF-8">
+        <meta description="Форма регистрации">       
+    </head>
+    <body>
+        <form name="registration">
+              
+
+        <h3>Пройдите регистрацию</h3>
+
+             <p><label for="email">Адрес эл.почты:</label></p>
+
+             <p><input type="email" id="email" placeholder="Введите адрес эл.почты" required></p>
+    
+                          
+             <p><label for="login">Логин:</label></p>
+                            
+             <p><input type="text" id="login" minlength="5" maxlength="50" placeholder="Введите логин" required></p>
+                           
+            <p><label for="password">Пароль:</label></p>
+                            
+            <p><input type="password" id="password" minlength="5" maxlength="50" placeholder="Введите пароль" required></p>
+                         
+            <p><label for="password_confirm">Подтвердите пароль:</label></p>
+                            
+            <p><input type="password" id="password_confirm" minlength="5" maxlength="50" placeholder="Подтвердите пароль" required></p>
+    
+                <p><Label for="file">Загрузите фото</Label></p>
+                <form enctype="multipart/form-data" method="post">
+                <p><input type="file" accept="image/*"></p>    
+
+                
+                 
+               <button>Зарегистрироваться</button>
+               <input type="Reset" value="Отмена">
+
+        </form>
+       <p><a href="1 страница.html">Вернуться</a></p>
+
+    </body>
+</html>
