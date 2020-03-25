@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Форма</title>
+<style>
+  		p { 
+  	text-align: center;
+  	}
+  	.center {
+     text-align: center;
+    }
+</style>
+<body>
+    <form name="form"
+        action="#" method="POST"
+            enctype="multipart/form-data">
+
+      <fieldset> 
+        <legend align="center">Регистрация</legend>
+            
+
+  	    <center>
+  	       <label for="email">Адрес эл.почты:
+           <input type="email" id="email" placeholder="Введите адрес эл.почты" required></label>
+    
+                          
+           <label for="login">Логин:
+           <input type="text" id="login" minlength="5" maxlength="50" placeholder="Введите логин" required></label>
+                           
+           <label for="password">Пароль:
+           <input type="password" id="password" minlength="5" maxlength="50" placeholder="Введите пароль" required></label>
+        </center>
+                         
+    
+        <p>
+        	<Label for="file">Загрузите фото</Label>
+        </p>
+
+            <form enctype="multipart/form-data" method="post">
+                <p>
+                	<input type="file" accept="image/*">
+                </p>
+
+      </fieldset>  
+           <br></br><!-- не знаю, как правильно сделать пробел. --> 
+      <fieldset> 
+          <legend align="center">Анкета</legend>
+
+          <p>
+          	<label for="age">Возраст:
+               <input id="age" type="number"
+                    min="18" max="150"></label>
+          </p>
+
+          <p>
+          	<label for="sex">Пол:
+                    <input checked type="radio">Мужской
+                    <input type="radio">Женский</label>
+         </p>
+
+
+         <p>
+         	<label for="children">Дети:
+	                <input checked type="checkbox">Нет
+                    <input type="checkbox">1
+                    <input type="checkbox">2
+                    <input type="checkbox">Больше 2</label>
+        </p>
+
+        <p>
+        	<label for="comment">Оставьте комментарий:
+				
+					<textarea
+							  autofocus required
+							  placeholder="комментарий"></textarea></label>
+		</p>
+
+        <p>
+        	<label for="country">Выберите страну:
+					 <p>
+					 	<select name="country" size="1" required>
+                        <option  value="Ru">Россия</option>
+                        <option  value="Ukr">Украина</option>
+                        <option  value="Kz">Казахстан</option>
+                    </p>
+             </label>
+                        </select>
+        </p>
+
+            </fieldset>
+
+<br></br>
+            <fieldset>  
+             <div class = "center">    
+              <button>Зарегистрироваться</button>
+               <input type="Reset" value="Отмена">
+             </div>
+
+            </fieldset>
+    
+            <p>
+            	<a href="1 страница.html">Вернуться</a>
+            </p>
+    
+      </form>   
+ <body>
+ </body>
+</html>
